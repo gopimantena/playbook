@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+   - file: dest=/tmp/data1 state=directory
+   - file: dest=/tmp/data2 state=directory
+

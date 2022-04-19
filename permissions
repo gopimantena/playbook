@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+   - file: dest=/tmp/data1 state=directory
+   - file: dest=/tmp/data2 state=directory
+   - file: dest=/tmp/data1 mode=700 owner=nani group=varains
+   - file: dest=/tmp/data2 mode=700 owner=nani group=varains
