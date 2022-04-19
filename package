@@ -1,0 +1,6 @@
+---
+  - hosts: all
+    tasks:
+    - name: install finger
+      package: name=finger state=latest
+
